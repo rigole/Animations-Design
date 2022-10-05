@@ -5,10 +5,58 @@ button{
     color: white;
     border: none;
     background-color: blue;
-    transition-property: background-color;
-    transition-duration: 3000ms;
+    transition:  all 3s ease-in 2s;
 }
 
 button:hover{
     background-color: brown;
+    color: black;
+    border-radius: 50%;
+
+/*Transition option
+.container {
+    width: 960px;
 }
+
+.move {
+    margin: 2em;
+    width: 150px;
+    height: 50px;
+    padding: 10px 15px;
+    background-color: red;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    border-radius: .5em;
+    font-size: 20px;
+    transition-property: translate();
+    transition-duration: 3s;
+}
+
+#ease {
+    transition-timing-function: ease;
+
+}
+
+
+#linear {
+    transition-timing-function: linear;
+}
+
+#ease-in {
+    transition-timing-function: ease-in;
+}
+
+#ease-out {
+    transition-timing-function: 
+}
+
+#ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.move:hover {
+    transform: translate(900px, 0);
+}
+
+*/
