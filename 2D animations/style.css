@@ -7,5 +7,6 @@ img{
 }
 img:hover {
     /*transform: translate(500px,  200px);*/
-    transform: scale(.25);
+    /*transform: scale(.25);*/
+    transform: rotate(4turn);
 }
