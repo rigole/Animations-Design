@@ -4,10 +4,16 @@ img{
     margin: auto;
     margin-top: 200px;
     transition: transform 2s;
+    /*transform-origin: top;*/
+}
+body{
+    perspective: 2000px;
 }
 img:hover {
     /*transform: translate(500px,  200px);*/
     /*transform: scale(.25);*/
     /*transform: rotate(4turn);*/ 
-    transform: skewY(-30deg);
+    /*transform: skewY(-30deg);*/
+    /*transform: rotate(45deg);*/
+    transform: translateZ(300px);
 }
