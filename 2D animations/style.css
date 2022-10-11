@@ -7,7 +7,7 @@ img{
     /*transform-origin: top;*/
 }
 body{
-    perspective: 2000px;
+    perspective: 500px;
 }
 img:hover {
     /*transform: translate(500px,  200px);*/
@@ -15,5 +15,6 @@ img:hover {
     /*transform: rotate(4turn);*/ 
     /*transform: skewY(-30deg);*/
     /*transform: rotate(45deg);*/
-    transform: translateZ(300px);
+    /*transform: translateZ(800px);*/
+    transform: rotateY(60deg);
 }
