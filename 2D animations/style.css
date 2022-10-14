@@ -92,7 +92,7 @@ a:hover:before {
 
 
 /* button Hover effect in cross*/
-
+/*
 body{
     height: 100vh;
     display: flex;
@@ -150,4 +150,35 @@ a:hover {
     color: white;
 }
 
-/* end button Hover effect in cross*/
+*/
+/* end button Hover effect in cross*/                                   
+
+/*  button stretching effect */  
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 40px 80px;
+    color: #E1332D;
+    border: 3px solid #E1332D;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    letter-spacing: -2px;
+    transition: all 0.5s;
+}
+
+a:hover {
+    font-weight: 900;
+    letter-spacing: 10px;
+    border: 7px solid #E1332D;
+}
+/*  button stretching effect */  
