@@ -283,7 +283,7 @@ a:hover {
 
 
 /*  creative hover button effect 2 layers on text  */
-
+/*
 body {
     margin: 0;
     display: flex;
@@ -346,8 +346,98 @@ a:hover:after{
     transform: perspective(1000px) rotateX(-75deg);
 }
 
-
-
-
+*/
 /* end creative hover button effect 2 layers on text  */
 
+/* creative splitted button effect  */
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #222;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #f6b93b;
+    letter-spacing: 3px;
+    padding: 25px 50px;
+    border: 3px solid #f6b93b;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+ 
+a:before,
+a:after,
+span:before,
+span:after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #f6b93b;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+a:before {
+    top: 0;
+    left: -25%;
+}
+a:hover:before {
+    top:0;
+    left:0;
+}
+
+a:after {
+    top: -100%;
+    left: 25%;
+}
+
+a:hover:after {
+    top: 0;
+    left: 25%;
+}
+
+a span:before {
+    top: 100%;
+    right: 25%;
+}
+
+a:hover span:before{
+    top: 0;
+    right: 25%;
+}
+
+a span:before {
+    top: 100%;
+    right: 25%;
+}
+
+a:hover span:before {
+    top: 0;
+    right: 25%;
+}
+
+a span:after {
+    top:0;
+    right: -25%;
+}
+
+a:hover span:after {
+    top: 0;
+    right: 0;
+}
+
+a:hover{
+    color: #222;
+}
+
+/* end creative splitted button effect  */
