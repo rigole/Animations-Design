@@ -350,7 +350,7 @@ a:hover:after{
 /* end creative hover button effect 2 layers on text  */
 
 /* creative splitted button effect  */
-
+/*
 body {
     margin: 0;
     display: flex;
@@ -439,5 +439,66 @@ a:hover span:after {
 a:hover{
     color: #222;
 }
-
+*/
 /* end creative splitted button effect  */
+
+/* border swapping effect  */
+
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #212121;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+    height: 60px;
+    width: 200px;
+    line-height: 60px;
+    text-align: center;
+    color: #FDC518;
+    position: relative;
+   
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 200px;
+    top: -15px;
+    left: 0;
+    border-left: 2px solid red;
+    border-right: 2px solid #FDC518;
+    transition: all 1s;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 230px;
+    top: 0;
+    left: -15px;
+    border-top:  2px solid red;
+    border-bottom: 2px solid #FDC518;
+    transition: all 1s;
+    transition-delay: 0.2s;
+}
+a:hover:before{
+    transform: rotateY(180deg);
+}
+
+a:hover:after {
+    transform: rotateX(180deg);
+}
+
+
+/* end border swapping effect  */
