@@ -444,6 +444,7 @@ a:hover{
 
 /* border swapping effect  */
 
+/*
 body{
     margin: 0;
     display: flex;
@@ -499,6 +500,66 @@ a:hover:before{
 a:hover:after {
     transform: rotateX(180deg);
 }
+*/
 
+/* creative first letter rotating button effect  */
 
-/* end border swapping effect  */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    width: 160px;
+    height: 60px;
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+a:hover:before {
+    opacity: 1;
+    transform: rotate(15deg);
+}
+
+a span {
+    color: transparent;
+    position: relative;
+}
+
+a span:before {
+    content: "B";
+    position: absolute;
+    color: black;
+    transition: all 0.2s;
+}
+
+a:hover span:before {
+    color: white;
+    font-size: 80px;
+    transform: rotate(360deg);
+}
+
+/* end creative first letter rotating button effect  */
