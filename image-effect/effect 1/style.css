@@ -20,9 +20,9 @@ body {
 
 .caption {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    height: 100%;
+    height: 30%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@ body {
     color: white;
     transition: all 0.5s;
     background-color: black;
-    transform: translateY(-100%);
+    transform: translateY(100%);
 }
 
 .caption h1 {
@@ -52,5 +52,5 @@ body {
 
 .container:hover img {
     /*transform: scale(1.3) rotate(-15deg);*/
-    transform: translateY(100%);
+    transform: translateY(-30%);
 }
