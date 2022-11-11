@@ -35,7 +35,7 @@ img {
 }
 
 .container:hover:before {
-    transform: translate(-50px, -150px) rotate(45deg);
+   
 }
 .caption{
     position: absolute;
@@ -50,17 +50,15 @@ img {
     text-transform: uppercase;
 }
 h2{
-    text-align: center;
-    font-size: 17px;
-    padding: 20px;
-    margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+   opacity: 0;
+   transition: all 0.5s;
    
 }
 
 .container:hover h2{
-    transform: translate(0, 0);
-    transition-delay: 0.3s;
+   
+    opacity: 1;
+
 }
 
 p{
@@ -72,8 +70,7 @@ p{
     
 }
 .container:hover p {
-    transform: translate(0, 0);
-    transition-delay: 0.4s;
+  
 }
 
 a {
@@ -93,51 +90,50 @@ a {
 
 img {
     transition: all 0.5s;
+    transition-delay: 0.5s;
 }
 
 .container:hover img {
-    transform: rotate(720deg) scale(0);
-    opacity: 0;
+    transform: scale(0);
+    transition-delay: 0;
 }
 
 .container:before {
     background-color: #006266;
-    opacity: 0;
-    transition: all 0.3s;
+    transform: scale(0) rotate(-180deg);
+    transition: all 0.5s;
 }
 
 .container:hover:before {
-    opacity: 1;
-    transition-delay: 0.5;
+   transform: scale(1) rotate(0deg);
+   transition-delay: 0.5s;
 }
 
 a {
-    transform: translateY(-300px);
-    transition: all 0.2s;
+   
 }
 
-.container:hover a {
-    transform: translateY(0);
-    transition-delay: 0.5s;
-}
 
 
 p {
-    transform: translateY(-300px);
-    transition: all 0.7s;
+   
 }
 
-.container:hover p {
-    transform: translateY(0);
-    transition-delay: 0.7s;
-}
+
 
 h2 {
-    transform: translateY(-300px);
-    transition: all 0.9s;
+   
 }
 
-.container:hover h2 {
-    transform: translateY(0);
-    transition-delay: 0.9s;
+.container:hover h2,
+.container:hover p,
+.container:hover a {
+    opacity: 1;
+    transition-delay: 1s;
+
+}
+
+.container {
+    background-color: #444;
+    border: 10px solid white;
 }
