@@ -134,6 +134,9 @@ a:hover:after {
 }
 */
 
+/* creative splited background effect*/
+
+/*
 body {
     margin: 0;
     display: flex;
@@ -197,3 +200,70 @@ span:nth-child(4){
     top: 75%;
     transition-delay: 0.45s;
 }
+
+*/
+
+/* end creative splited background effect*/
+
+/* creative 2 moving line under menu */
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul{
+    padding: 0;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #222;
+    position: relative;
+}
+
+ul li a:before {
+    content: "";
+    width: 0;
+    height: 5px;
+    background-color: #00bcd4;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    transition: all 0.5s;
+}
+
+ul li a:after {
+    content: "";
+    width: 0;
+    height: 5px;
+    background-color: #f0f;
+    position: absolute;
+    top: 120%;
+    right: 0;
+    transition: all 0.5s;
+}
+
+ul li a:hover:before {
+    width: 50%;
+    transform: translateX(100%);
+}
+
+ul li a:hover:after {
+    width: 50%;
+    transform: translateX(-100%);
+}
+
+/* end creative 2 moving line under menu */
