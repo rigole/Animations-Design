@@ -429,7 +429,7 @@ a:hover {
 
 
 /* border sniper menu effect */
-
+/*
 body {
     height: 100vh;
     display: flex;
@@ -492,6 +492,8 @@ a:hover:after{
     -webkit-text-stroke: 1px black;
     transform: translate(30px, -30px);
 }
+
+*/
 
 /* end border sniper menu effect */
 
