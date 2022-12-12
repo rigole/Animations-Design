@@ -7,7 +7,18 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Comfortaa';
+    background-color: #192a56;
 }
+
+
+
+
+/* creative expandable card effect */
+/*
+
+
+ 
+
 
 .card {
     position: relative;
@@ -67,3 +78,19 @@ a {
 .card:hover .content{
     color: white;
 }
+
+*/
+/* end creative expandable card effect */
+
+/*  creative border card effect */
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/* end  creative border card effect */

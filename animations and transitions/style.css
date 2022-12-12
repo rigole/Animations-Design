@@ -12,8 +12,8 @@ button:hover{
     background-color: brown;
     color: black;
     border-radius: 50%;
-
-/*Transition option
+}
+Transition option
 .container {
     width: 960px;
 }
@@ -59,4 +59,3 @@ button:hover{
     transform: translate(900px, 0);
 }
 
-*/
