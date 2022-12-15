@@ -83,7 +83,7 @@ a {
 /* end creative expandable card effect */
 
 /*  creative border card effect */
-
+/*
 .card {
     position: relative;
     width: 300px;
@@ -160,5 +160,32 @@ img{
 .card:hover img {
     opacity: 0;
 }
-
+*/
 /* end  creative border card effect */
+
+
+/*  creative layered  card hover effect */
+ 
+.card{
+    position: relative;
+    width: 320px;
+    height: 350px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:before,
+.card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: red;
+    transition: 0.5s;
+}
+
+/* end creative layered  card hover effect */
