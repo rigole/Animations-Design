@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
 
-
+/*smooky effect*/
+/*
 body{
     height: 100vh;
     display: flex;
@@ -59,6 +60,48 @@ li:nth-child(7){
     transition-delay: 2.4s;
 }
 
+*/
+
+/*end skmoky*/
+
+
+/*fill text effect*/
+
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Comfortaa;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    color: #ccc;
+    font-size: 120px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h1:before{
+    content: "billionaire";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #262626;
+    width: 0%;
+    overflow: hidden;
+    transition: all 0.5s;
+
+}
+
+h1:hover:before{
+    width: 100%;
+}
+
+/*end fill text effect*/
 
 
 
