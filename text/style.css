@@ -181,7 +181,7 @@ body{
 
 
 /*creative rotated text border effect*/
-
+/*
 body{
     height: 100vh;
     display: flex;
@@ -304,6 +304,33 @@ span{
     transform: scaleY(1);
     transition-delay: 1.5s;
 }
+*/
 /*end creative rotated text border effect*/
 
 
+body{
+    margin: 0;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    animation-name: moving;
+    animation-duration: 3s;
+}
+
+@keyframes moving {
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateX(1000px);
+    }
+
+    100% {
+        transform: translate(1000px, 500px);
+    }
+
+}
