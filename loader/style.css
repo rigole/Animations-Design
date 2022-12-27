@@ -235,6 +235,8 @@ h1:before {
 
 /* loader 4 */
 
+/*
+
 body {
     margin: 0;
     display: flex;
@@ -281,4 +283,50 @@ body {
     }
 }
 
+*/
+
 /*end loader 4 */
+
+/* loader 5 */
+
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Comfortaa;
+    background-color: #262626;
+}
+
+.loading {
+    width: 300px;
+    height: 3px;
+    background-color: white;
+    animation: line 2s infinite alternate;
+}
+
+@keyframes line {
+
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    45% {
+        transform: scaleX(1); 
+        transform-origin: left;
+    }
+
+    50% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    100% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+}
+
+/* loader 5 */
