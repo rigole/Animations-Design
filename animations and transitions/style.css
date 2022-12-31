@@ -362,7 +362,21 @@ h2:nth-child(1){
 
 h2:nth-child(2){
     color: #03a9f4;
-    clip-path:polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+    /*clip-path:polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);*/
+}
+
+@keyframes wave {
+    0% {
+        clip-path: polygon(0% 38%, 21% 40%, 38% 51%, 54% 57%, 75% 57%, 100% 52%, 100% 100%, 0% 100%);
+    }
+
+    50% {
+
+    }
+
+    100% {
+
+    }
 }
 
 /* End wavy animation effect */ 
