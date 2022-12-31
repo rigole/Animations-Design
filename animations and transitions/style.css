@@ -357,7 +357,8 @@ h2 {
 }
 
 h2:nth-child(1){
-    color: #7efff5
+    color: #7efff5;
+    -webkit-text-stroke: 2px #03a9f4;
 }
 
 h2:nth-child(2){
@@ -372,7 +373,7 @@ h2:nth-child(2){
     }
 
     50% {
-        clip-path: polygon(0 49%, 16% 56%, 33% 55%, 55% 50%, 75% 42%, 100% 40%, 100% 100% 0% 100%);
+        clip-path: polygon(0 49%, 16% 56%, 33% 55%, 55% 50%, 75% 42%, 100% 40%, 100% 100%, 0% 100%);
     }
 
     100% {
