@@ -83,7 +83,7 @@ a {
 /* end creative expandable card effect */
 
 /*  creative border card effect */
-/*
+
 .card {
     position: relative;
     width: 300px;
@@ -160,12 +160,12 @@ img{
 .card:hover img {
     opacity: 0;
 }
-*/
+
 /* end  creative border card effect */
 
 
 /*  creative layered  card hover effect */
- 
+ /*
 .card{
     position: relative;
     width: 320px;
